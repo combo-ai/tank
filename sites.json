@@ -1,0 +1,132 @@
+{
+  "_version": "1.0.0",
+  "_lastUpdate": "2026-02-04",
+  "_description": "Tank - Remote Site Configurations",
+
+  "app.weavy.ai": {
+    "id": "weavy",
+    "name": "Weavy",
+    "domain": "app.weavy.ai",
+    "enabled": true,
+    "costPerCredit": 0.01,
+    "selectors": {
+      "credits": "div[aria-label=\"Get more credits\"] span",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "weavy"
+  },
+
+  "app.leonardo.ai": {
+    "id": "leonardo",
+    "name": "Leonardo.ai",
+    "domain": "app.leonardo.ai",
+    "enabled": true,
+    "costPerCredit": 0.01,
+    "selectors": {
+      "credits": "[data-testid=\"credits-display\"], .credits-counter",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "leonardo"
+  },
+
+  "app.runwayml.com": {
+    "id": "runway",
+    "name": "Runway",
+    "domain": "app.runwayml.com",
+    "enabled": true,
+    "costPerCredit": 0.05,
+    "selectors": {
+      "credits": "[data-credits], .credit-balance",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "runway"
+  },
+
+  "higgsfield.ai": {
+    "id": "higgsfield",
+    "name": "Higgsfield",
+    "domain": "higgsfield.ai",
+    "enabled": true,
+    "costPerCredit": 0.02,
+    "selectors": {
+      "credits": ".credits-display, [data-credits]",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "higgsfield"
+  },
+
+  "www.freepik.com": {
+    "id": "freepik",
+    "name": "Freepik",
+    "domain": "www.freepik.com",
+    "enabled": true,
+    "costPerCredit": 0.008,
+    "selectors": {
+      "credits": ".credits-count, [data-credits]",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "freepik"
+  },
+
+  "app.floraai.app": {
+    "id": "flora",
+    "name": "Flora AI",
+    "domain": "app.floraai.app",
+    "enabled": true,
+    "costPerCredit": 0.01,
+    "selectors": {
+      "credits": ".credit-balance, [data-credits]",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "flora"
+  },
+
+  "www.midjourney.com": {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "domain": "www.midjourney.com",
+    "enabled": true,
+    "costPerCredit": 0.04,
+    "selectors": {
+      "credits": "[data-fast-hours], .fast-hours",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "midjourney",
+    "notes": "Tracks fast hours instead of credits"
+  },
+
+  "pika.art": {
+    "id": "pika",
+    "name": "Pika",
+    "domain": "pika.art",
+    "enabled": true,
+    "costPerCredit": 0.03,
+    "selectors": {
+      "credits": ".credits-display, [data-credits]",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "pika"
+  },
+
+  "klingai.com": {
+    "id": "kling",
+    "name": "Kling AI",
+    "domain": "klingai.com",
+    "enabled": true,
+    "costPerCredit": 0.02,
+    "selectors": {
+      "credits": ".credit-count, [data-credits]",
+      "project": "title"
+    },
+    "projectFromTitle": true,
+    "icon": "kling"
+  }
+}
