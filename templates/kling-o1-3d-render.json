@@ -1,0 +1,874 @@
+{
+  "id": "kling-o1-3d-render",
+  "name": "KLING O1 - 3D to Render",
+  "category": "Video",
+  "icon": "\ud83c\udfac",
+  "description": "Transform 3D viewport renders into cinematic video using KLING O1 with style reference",
+  "nodeCount": 6,
+  "template": {
+    "nodes": [
+      {
+        "id": "294da02a-00cd-4161-8871-a7e9e57fc9a4",
+        "dragHandle": ".node-header",
+        "owner": null,
+        "type": "import",
+        "visibility": null,
+        "isModel": false,
+        "data": {
+          "handles": {
+            "output": {
+              "file": {
+                "type": "any",
+                "label": "File",
+                "order": 0,
+                "format": "uri",
+                "description": "The uploaded file"
+              }
+            }
+          },
+          "name": "IMAGE RENDER",
+          "description": null,
+          "color": "Yambo_Blue",
+          "label": null,
+          "menu": null,
+          "params": null,
+          "schema": null,
+          "version": 3,
+          "dark_color": "Yambo_Blue_Dark",
+          "border_color": "Yambo_Blue_Stroke",
+          "files": [],
+          "cameraLocked": false,
+          "selectedIndex": 0,
+          "output": {}
+        },
+        "createdAt": "2026-02-10T11:33:18.546Z",
+        "updatedAt": "2025-12-10T19:46:55.713Z",
+        "locked": false,
+        "position": {
+          "x": 40,
+          "y": 30
+        },
+        "kind": {
+          "type": "import",
+          "data": {
+            "files": [],
+            "selectedIndex": 0,
+            "cameraLocked": false
+          }
+        },
+        "selected": true,
+        "width": 460,
+        "height": 558,
+        "parentId": "b0547073-a64e-4393-9707-2074828ac3ec"
+      },
+      {
+        "id": "df58343d-a328-4fcd-995e-3dafc4df2cf6",
+        "dragHandle": ".node-header",
+        "owner": null,
+        "type": "router",
+        "visibility": null,
+        "isModel": false,
+        "data": {
+          "handles": {
+            "input": {
+              "in": {
+                "id": "e7d07a42-6f6a-42d3-b9a0-45d8a8e54292",
+                "type": "any",
+                "label": "In",
+                "order": 0,
+                "description": "The input"
+              }
+            },
+            "output": {
+              "out": {
+                "id": "33f558e5-f58e-4462-bfaa-da9d0990c2cf",
+                "type": "any",
+                "label": "Out",
+                "order": 0,
+                "description": "The output"
+              }
+            }
+          },
+          "name": "Image Router",
+          "description": null,
+          "color": "Yambo_Orange",
+          "label": null,
+          "menu": null,
+          "params": null,
+          "schema": null,
+          "version": 3,
+          "dark_color": "Yambo_Orange_Dark",
+          "border_color": "Yambo_Orange_Stroke",
+          "output": {},
+          "inputNode": {
+            "nodeId": "294da02a-00cd-4161-8871-a7e9e57fc9a4",
+            "outputId": "file"
+          }
+        },
+        "createdAt": "2026-02-10T11:33:18.546Z",
+        "updatedAt": "2025-12-10T19:46:55.713Z",
+        "locked": false,
+        "position": {
+          "x": 590,
+          "y": 290
+        },
+        "kind": {
+          "type": "router",
+          "data": {
+            "inputNode": {
+              "nodeId": "294da02a-00cd-4161-8871-a7e9e57fc9a4",
+              "outputId": "file"
+            }
+          }
+        },
+        "selected": true,
+        "width": 250,
+        "height": 64,
+        "parentId": "b0547073-a64e-4393-9707-2074828ac3ec"
+      },
+      {
+        "id": "9a2db2b7-bbbd-411e-9e30-bbbead4d2f05",
+        "dragHandle": ".node-header",
+        "owner": null,
+        "type": "import",
+        "visibility": null,
+        "isModel": false,
+        "data": {
+          "handles": {
+            "output": {
+              "file": {
+                "type": "any",
+                "label": "File",
+                "order": 0,
+                "format": "uri",
+                "description": "The uploaded file"
+              }
+            }
+          },
+          "name": "VIDEO VIEWPORT",
+          "description": null,
+          "color": "Yambo_Blue",
+          "label": null,
+          "menu": null,
+          "params": null,
+          "schema": null,
+          "version": 3,
+          "dark_color": "Yambo_Blue_Dark",
+          "border_color": "Yambo_Blue_Stroke",
+          "files": [],
+          "cameraLocked": false,
+          "selectedIndex": 0,
+          "output": {}
+        },
+        "createdAt": "2026-02-10T11:33:18.546Z",
+        "updatedAt": "2025-12-10T19:46:55.713Z",
+        "locked": false,
+        "position": {
+          "x": 40,
+          "y": 640
+        },
+        "kind": {
+          "type": "import",
+          "data": {
+            "files": [],
+            "selectedIndex": 0,
+            "cameraLocked": false
+          }
+        },
+        "selected": true,
+        "width": 460,
+        "height": 558,
+        "parentId": "b0547073-a64e-4393-9707-2074828ac3ec"
+      },
+      {
+        "id": "c629e09c-169b-4874-9d42-c0bd661b8005",
+        "dragHandle": ".node-header",
+        "owner": null,
+        "type": "router",
+        "visibility": null,
+        "isModel": false,
+        "data": {
+          "handles": {
+            "input": {
+              "in": {
+                "id": "51d3ca85-207f-44e1-98b4-aa59a671d2b8",
+                "type": "any",
+                "label": "In",
+                "order": 0,
+                "description": "The input"
+              }
+            },
+            "output": {
+              "out": {
+                "id": "529aa60d-ba75-4939-bceb-5d93cbc5269a",
+                "type": "any",
+                "label": "Out",
+                "order": 0,
+                "description": "The output"
+              }
+            }
+          },
+          "name": "Video Router",
+          "description": null,
+          "color": "Yambo_Orange",
+          "label": null,
+          "menu": null,
+          "params": null,
+          "schema": null,
+          "version": 3,
+          "dark_color": "Yambo_Orange_Dark",
+          "border_color": "Yambo_Orange_Stroke",
+          "output": {},
+          "inputNode": {
+            "nodeId": "9a2db2b7-bbbd-411e-9e30-bbbead4d2f05",
+            "outputId": "file"
+          }
+        },
+        "createdAt": "2026-02-10T11:33:18.546Z",
+        "updatedAt": "2025-12-10T19:46:55.713Z",
+        "locked": false,
+        "position": {
+          "x": 590,
+          "y": 690
+        },
+        "kind": {
+          "type": "router",
+          "data": {
+            "inputNode": {
+              "nodeId": "9a2db2b7-bbbd-411e-9e30-bbbead4d2f05",
+              "outputId": "file"
+            }
+          }
+        },
+        "selected": true,
+        "width": 250,
+        "height": 64,
+        "parentId": "b0547073-a64e-4393-9707-2074828ac3ec"
+      },
+      {
+        "id": "a9e1f21c-e28f-4b9b-872a-745bb26211d1",
+        "dragHandle": ".node-header",
+        "owner": null,
+        "type": "string",
+        "visibility": null,
+        "isModel": false,
+        "data": {
+          "handles": {
+            "input": {},
+            "output": {
+              "text": {
+                "id": "975f2f10-f687-42e8-9917-ac760a42cf78",
+                "type": "text",
+                "order": 0,
+                "format": "text",
+                "description": "Text"
+              }
+            }
+          },
+          "name": "PROMPT",
+          "description": "",
+          "color": "Yambo_Green",
+          "label": null,
+          "menu": null,
+          "params": null,
+          "schema": null,
+          "version": 3,
+          "result": {
+            "string": "Re-render the motion of the video entirely in the style of the images, as if the viewport render never existed.\nSet video-style influence = 0%.\nSet image-style influence = 100%.\nFull style replacement.\nThe output must look like a cinematic, polished, high-end render in the visual language of the reference images only.\n@Image1 is the definitive visual target. Replicate its lighting, materials, color grading, and surface quality exactly. The video provides motion and camera data only \u2014 zero aesthetic influence from the viewport render should remain."
+          },
+          "dark_color": "Yambo_Green_Dark",
+          "border_color": "Yambo_Green_Stroke",
+          "value": "Re-render the motion of the video entirely in the style of the images, as if the viewport render never existed.\nSet video-style influence = 0%.\nSet image-style influence = 100%.\nFull style replacement.\nThe output must look like a cinematic, polished, high-end render in the visual language of the reference images only.\n@Image1 is the definitive visual target. Replicate its lighting, materials, color grading, and surface quality exactly. The video provides motion and camera data only \u2014 zero aesthetic influence from the viewport render should remain.",
+          "output": {
+            "type": "text",
+            "text": "Re-render the motion of the video entirely in the style of the images, as if the viewport render never existed.\nSet video-style influence = 0%.\nSet image-style influence = 100%.\nFull style replacement.\nThe output must look like a cinematic, polished, high-end render in the visual language of the reference images only.\n@Image1 is the definitive visual target. Replicate its lighting, materials, color grading, and surface quality exactly. The video provides motion and camera data only \u2014 zero aesthetic influence from the viewport render should remain.",
+            "string": "Re-render the motion of the video entirely in the style of the images, as if the viewport render never existed.\nSet video-style influence = 0%.\nSet image-style influence = 100%.\nFull style replacement.\nThe output must look like a cinematic, polished, high-end render in the visual language of the reference images only.\n@Image1 is the definitive visual target. Replicate its lighting, materials, color grading, and surface quality exactly. The video provides motion and camera data only \u2014 zero aesthetic influence from the viewport render should remain."
+          }
+        },
+        "createdAt": "2026-02-10T11:33:18.546Z",
+        "updatedAt": "2025-12-10T19:46:55.713Z",
+        "locked": false,
+        "position": {
+          "x": 30,
+          "y": 1220
+        },
+        "kind": {
+          "type": "string",
+          "data": {
+            "value": "Re-render the motion of the video entirely in the style of the images, as if the viewport render never existed.\nSet video-style influence = 0%.\nSet image-style influence = 100%.\nFull style replacement.\nThe output must look like a cinematic, polished, high-end render in the visual language of the reference images only.\n@Image1 is the definitive visual target. Replicate its lighting, materials, color grading, and surface quality exactly. The video provides motion and camera data only \u2014 zero aesthetic influence from the viewport render should remain."
+          }
+        },
+        "selected": true,
+        "width": 460,
+        "height": 460,
+        "parentId": "b0547073-a64e-4393-9707-2074828ac3ec"
+      },
+      {
+        "id": "bb6e509f-d322-4d37-b86a-b77e7be9d991",
+        "dragHandle": ".node-header",
+        "owner": null,
+        "type": "custommodelV2",
+        "visibility": "private",
+        "isModel": true,
+        "data": {
+          "handles": {
+            "input": {
+              "prompt": {
+                "id": "6cb4427e-86e4-4e5d-a1f4-54a89c7ed455",
+                "type": "text",
+                "label": "prompt",
+                "order": 0,
+                "format": "text",
+                "required": true,
+                "description": "Use @Image1, @Image2 to reference images in order."
+              },
+              "image_1": {
+                "id": "7cb29c69-cd02-4a7b-bd14-a8d61e266455",
+                "type": "image",
+                "label": "image_1",
+                "order": 1,
+                "format": "uri",
+                "required": false,
+                "description": "Reference images for style/appearance."
+              },
+              "video_url": {
+                "id": "03dedd7f-da23-4cd3-a10e-764ad03446e6",
+                "type": "video",
+                "label": "reference video",
+                "format": "text",
+                "required": true,
+                "description": "Reference video. 3-10 seconds duration, 720-2160px resolution, max 200MB."
+              }
+            },
+            "output": {
+              "result": {
+                "id": "7e43b9a3-8396-44c9-a512-20f23a9960a6",
+                "type": "video",
+                "label": "result",
+                "order": 0,
+                "format": "uri",
+                "description": "Result video"
+              }
+            }
+          },
+          "name": "KLING O1 \u2014 3D Render",
+          "description": "Kling O1 Omni generates new shots guided by an input reference video, preserving cinematic language such as motion, and camera style to produce seamless scene continuity.",
+          "color": "Red",
+          "label": null,
+          "menu": {
+            "icon": "EmojiObjectsIcon",
+            "isModel": true,
+            "displayName": "Kling o1 Reference Video to Video"
+          },
+          "model": {
+            "name": "fal-ai/kling-video/o1/video-to-video/reference",
+            "service": "fal_imported",
+            "version": "fal-ai/kling-video/o1/video-to-video/reference"
+          },
+          "params": {
+            "model": "Pro",
+            "duration": "5",
+            "keep_audio": false,
+            "aspect_ratio": "auto"
+          },
+          "schema": {
+            "model": {
+              "type": "enum",
+              "order": 0,
+              "title": "Model Type",
+              "default": "Pro",
+              "options": [
+                "Pro",
+                "Standard"
+              ],
+              "description": "Model to run"
+            },
+            "duration": {
+              "type": "enum",
+              "title": "Duration",
+              "default": "5",
+              "options": [
+                "5",
+                "10"
+              ],
+              "required": false
+            },
+            "keep_audio": {
+              "type": "boolean",
+              "title": "Keep Audio",
+              "default": false,
+              "required": false
+            },
+            "aspect_ratio": {
+              "type": "enum",
+              "title": "Aspect Ratio",
+              "default": "auto",
+              "options": [
+                "auto",
+                "16:9",
+                "9:16",
+                "1:1"
+              ],
+              "required": false
+            }
+          },
+          "version": 3,
+          "kind": {
+            "type": "wildcard",
+            "model": {
+              "type": "predefined",
+              "name": "fal-ai/kling-video/o1/video-to-video/reference",
+              "version": "fal-ai/kling-video/o1/video-to-video/reference",
+              "service": "fal_imported",
+              "description": "Kling O1 Omni generates new shots guided by an input reference video, preserving cinematic language such as motion, and camera style to produce seamless scene continuity."
+            },
+            "inputs": [
+              [
+                {
+                  "id": "prompt",
+                  "title": "prompt",
+                  "description": "Use @Image1, @Image2 to reference images in order.",
+                  "validTypes": [
+                    "text"
+                  ],
+                  "required": true
+                },
+                {
+                  "nodeId": "a9e1f21c-e28f-4b9b-872a-745bb26211d1",
+                  "outputId": "text",
+                  "string": "Re-render the motion of the video entirely in the style of the images, as if the viewport render never existed.\nSet video-style influence = 0%.\nSet image-style influence = 100%.\nFull style replacement.\nThe output must look like a cinematic, polished, high-end render in the visual language of the reference images only.\n@Image1 is the definitive visual target. Replicate its lighting, materials, color grading, and surface quality exactly. The video provides motion and camera data only \u2014 zero aesthetic influence from the viewport render should remain."
+                }
+              ],
+              [
+                {
+                  "id": "video_url",
+                  "title": "reference video",
+                  "description": "Reference video. 3-10 seconds duration, 720-2160px resolution, max 200MB.",
+                  "validTypes": [
+                    "video"
+                  ],
+                  "required": true
+                },
+                {
+                  "nodeId": "c629e09c-169b-4874-9d42-c0bd661b8005",
+                  "outputId": "out"
+                }
+              ],
+              [
+                {
+                  "id": "image_1",
+                  "title": "image_1",
+                  "description": "Reference images for style/appearance.",
+                  "validTypes": [
+                    "image"
+                  ],
+                  "required": false
+                },
+                {
+                  "nodeId": "df58343d-a328-4fcd-995e-3dafc4df2cf6",
+                  "outputId": "out"
+                }
+              ]
+            ],
+            "parameters": [
+              [
+                {
+                  "id": "model",
+                  "title": "Model Type",
+                  "description": "Model to run",
+                  "constraint": {
+                    "type": "enum",
+                    "options": [
+                      "Pro",
+                      "Standard"
+                    ]
+                  },
+                  "defaultValue": {
+                    "type": "string",
+                    "value": "Pro"
+                  }
+                },
+                {
+                  "type": "value",
+                  "data": {
+                    "type": "string",
+                    "value": "Pro"
+                  }
+                }
+              ],
+              [
+                {
+                  "id": "duration",
+                  "title": "Duration",
+                  "constraint": {
+                    "type": "enum",
+                    "options": [
+                      "5",
+                      "10"
+                    ]
+                  },
+                  "defaultValue": {
+                    "type": "string",
+                    "value": "5"
+                  }
+                },
+                {
+                  "type": "value",
+                  "data": {
+                    "type": "string",
+                    "value": "5"
+                  }
+                }
+              ],
+              [
+                {
+                  "id": "keep_audio",
+                  "title": "Keep Audio",
+                  "constraint": {
+                    "type": "boolean"
+                  },
+                  "defaultValue": {
+                    "type": "boolean",
+                    "value": false
+                  }
+                },
+                {
+                  "type": "value",
+                  "data": {
+                    "type": "boolean",
+                    "value": false
+                  }
+                }
+              ],
+              [
+                {
+                  "id": "aspect_ratio",
+                  "title": "Aspect Ratio",
+                  "constraint": {
+                    "type": "enum",
+                    "options": [
+                      "auto",
+                      "16:9",
+                      "9:16",
+                      "1:1"
+                    ]
+                  },
+                  "defaultValue": {
+                    "type": "string",
+                    "value": "auto"
+                  }
+                },
+                {
+                  "type": "value",
+                  "data": {
+                    "type": "string",
+                    "value": "auto"
+                  }
+                }
+              ]
+            ],
+            "outputs": [
+              {
+                "id": "result",
+                "title": "result",
+                "description": "Result video",
+                "dataType": "video"
+              }
+            ]
+          },
+          "generations": [],
+          "selectedIndex": 0,
+          "cameraLocked": false,
+          "result": [],
+          "output": {},
+          "selectedOutput": 0
+        },
+        "createdAt": "2026-02-10T11:33:18.546Z",
+        "updatedAt": "2025-12-10T19:46:55.713Z",
+        "locked": false,
+        "position": {
+          "x": 940,
+          "y": 440
+        },
+        "kind": {
+          "type": "custommodelV2",
+          "data": {
+            "generations": [],
+            "selectedIndex": 0,
+            "kind": {
+              "type": "wildcard",
+              "model": {
+                "type": "predefined",
+                "name": "fal-ai/kling-video/o1/video-to-video/reference",
+                "version": "fal-ai/kling-video/o1/video-to-video/reference",
+                "service": "fal_imported",
+                "description": "Kling O1 Omni generates new shots guided by an input reference video, preserving cinematic language such as motion, and camera style to produce seamless scene continuity."
+              },
+              "inputs": [
+                [
+                  {
+                    "id": "prompt",
+                    "title": "prompt",
+                    "description": "Use @Image1, @Image2 to reference images in order.",
+                    "validTypes": [
+                      "text"
+                    ],
+                    "required": true
+                  },
+                  {
+                    "nodeId": "a9e1f21c-e28f-4b9b-872a-745bb26211d1",
+                    "outputId": "text",
+                    "string": "Re-render the motion of the video entirely in the style of the images, as if the viewport render never existed.\nSet video-style influence = 0%.\nSet image-style influence = 100%.\nFull style replacement.\nThe output must look like a cinematic, polished, high-end render in the visual language of the reference images only.\n@Image1 is the definitive visual target. Replicate its lighting, materials, color grading, and surface quality exactly. The video provides motion and camera data only \u2014 zero aesthetic influence from the viewport render should remain."
+                  }
+                ],
+                [
+                  {
+                    "id": "video_url",
+                    "title": "reference video",
+                    "description": "Reference video. 3-10 seconds duration, 720-2160px resolution, max 200MB.",
+                    "validTypes": [
+                      "video"
+                    ],
+                    "required": true
+                  },
+                  {
+                    "nodeId": "c629e09c-169b-4874-9d42-c0bd661b8005",
+                    "outputId": "out"
+                  }
+                ],
+                [
+                  {
+                    "id": "image_1",
+                    "title": "image_1",
+                    "description": "Reference images for style/appearance.",
+                    "validTypes": [
+                      "image"
+                    ],
+                    "required": false
+                  },
+                  {
+                    "nodeId": "df58343d-a328-4fcd-995e-3dafc4df2cf6",
+                    "outputId": "out"
+                  }
+                ]
+              ],
+              "parameters": [
+                [
+                  {
+                    "id": "model",
+                    "title": "Model Type",
+                    "description": "Model to run",
+                    "constraint": {
+                      "type": "enum",
+                      "options": [
+                        "Pro",
+                        "Standard"
+                      ]
+                    },
+                    "defaultValue": {
+                      "type": "string",
+                      "value": "Pro"
+                    }
+                  },
+                  {
+                    "type": "value",
+                    "data": {
+                      "type": "string",
+                      "value": "Pro"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "id": "duration",
+                    "title": "Duration",
+                    "constraint": {
+                      "type": "enum",
+                      "options": [
+                        "5",
+                        "10"
+                      ]
+                    },
+                    "defaultValue": {
+                      "type": "string",
+                      "value": "5"
+                    }
+                  },
+                  {
+                    "type": "value",
+                    "data": {
+                      "type": "string",
+                      "value": "5"
+                    }
+                  }
+                ],
+                [
+                  {
+                    "id": "keep_audio",
+                    "title": "Keep Audio",
+                    "constraint": {
+                      "type": "boolean"
+                    },
+                    "defaultValue": {
+                      "type": "boolean",
+                      "value": false
+                    }
+                  },
+                  {
+                    "type": "value",
+                    "data": {
+                      "type": "boolean",
+                      "value": false
+                    }
+                  }
+                ],
+                [
+                  {
+                    "id": "aspect_ratio",
+                    "title": "Aspect Ratio",
+                    "constraint": {
+                      "type": "enum",
+                      "options": [
+                        "auto",
+                        "16:9",
+                        "9:16",
+                        "1:1"
+                      ]
+                    },
+                    "defaultValue": {
+                      "type": "string",
+                      "value": "auto"
+                    }
+                  },
+                  {
+                    "type": "value",
+                    "data": {
+                      "type": "string",
+                      "value": "auto"
+                    }
+                  }
+                ]
+              ],
+              "outputs": [
+                {
+                  "id": "result",
+                  "title": "result",
+                  "description": "Result video",
+                  "dataType": "video"
+                }
+              ]
+            },
+            "cameraLocked": false
+          }
+        },
+        "selected": true,
+        "width": 460,
+        "height": 560,
+        "parentId": "b0547073-a64e-4393-9707-2074828ac3ec"
+      },
+      {
+        "id": "b0547073-a64e-4393-9707-2074828ac3ec",
+        "type": "custom_group",
+        "data": {
+          "version": 3,
+          "color": "rgba(227, 232, 236, 0.64)",
+          "description": "Group of nodes",
+          "type": "custom_group",
+          "name": "KLING O1 3D RENDER",
+          "handles": {
+            "input": [],
+            "output": []
+          },
+          "width": 1430,
+          "height": 1710,
+          "labelFontSize": 16
+        },
+        "position": {
+          "x": 8280,
+          "y": 14220
+        },
+        "locked": false,
+        "selected": true,
+        "width": 1430,
+        "height": 1710
+      }
+    ],
+    "edges": [
+      {
+        "id": "0c460610-77d2-478c-8d72-62c28c893f22",
+        "source": "294da02a-00cd-4161-8871-a7e9e57fc9a4",
+        "target": "df58343d-a328-4fcd-995e-3dafc4df2cf6",
+        "sourceHandle": "294da02a-00cd-4161-8871-a7e9e57fc9a4-output-file",
+        "targetHandle": "df58343d-a328-4fcd-995e-3dafc4df2cf6-input-in",
+        "type": "custom",
+        "data": {
+          "sourceColor": "Yambo_Blue",
+          "targetColor": "Yambo_Orange",
+          "sourceHandleType": "any",
+          "targetHandleType": "any"
+        },
+        "selected": true
+      },
+      {
+        "id": "239a44ba-f5e1-4bb9-8159-837ccaa6f6eb",
+        "source": "9a2db2b7-bbbd-411e-9e30-bbbead4d2f05",
+        "target": "c629e09c-169b-4874-9d42-c0bd661b8005",
+        "sourceHandle": "9a2db2b7-bbbd-411e-9e30-bbbead4d2f05-output-file",
+        "targetHandle": "c629e09c-169b-4874-9d42-c0bd661b8005-input-in",
+        "type": "custom",
+        "data": {
+          "sourceColor": "Yambo_Blue",
+          "targetColor": "Yambo_Orange",
+          "sourceHandleType": "any",
+          "targetHandleType": "any"
+        },
+        "selected": true
+      },
+      {
+        "id": "798286bb-c5a7-41b5-9506-1ab96331aadb",
+        "source": "a9e1f21c-e28f-4b9b-872a-745bb26211d1",
+        "target": "bb6e509f-d322-4d37-b86a-b77e7be9d991",
+        "sourceHandle": "a9e1f21c-e28f-4b9b-872a-745bb26211d1-output-text",
+        "targetHandle": "bb6e509f-d322-4d37-b86a-b77e7be9d991-input-prompt",
+        "type": "custom",
+        "data": {
+          "sourceColor": "Yambo_Green",
+          "targetColor": "Red",
+          "sourceHandleType": "text",
+          "targetHandleType": "text"
+        },
+        "selected": true
+      },
+      {
+        "id": "1226b288-6b63-445d-a08d-c2736f3a2b95",
+        "source": "df58343d-a328-4fcd-995e-3dafc4df2cf6",
+        "target": "bb6e509f-d322-4d37-b86a-b77e7be9d991",
+        "sourceHandle": "df58343d-a328-4fcd-995e-3dafc4df2cf6-output-out",
+        "targetHandle": "bb6e509f-d322-4d37-b86a-b77e7be9d991-input-image_1",
+        "type": "custom",
+        "data": {
+          "sourceColor": "Yambo_Orange",
+          "targetColor": "Red",
+          "sourceHandleType": "any",
+          "targetHandleType": "image"
+        },
+        "selected": true
+      },
+      {
+        "id": "21ac73c5-d8fa-4a77-8289-a2d23e59ffb7",
+        "source": "c629e09c-169b-4874-9d42-c0bd661b8005",
+        "target": "bb6e509f-d322-4d37-b86a-b77e7be9d991",
+        "sourceHandle": "c629e09c-169b-4874-9d42-c0bd661b8005-output-out",
+        "targetHandle": "bb6e509f-d322-4d37-b86a-b77e7be9d991-input-video_url",
+        "type": "custom",
+        "data": {
+          "sourceColor": "Yambo_Orange",
+          "targetColor": "Red",
+          "sourceHandleType": "any",
+          "targetHandleType": "video"
+        },
+        "selected": true
+      }
+    ]
+  }
+}
