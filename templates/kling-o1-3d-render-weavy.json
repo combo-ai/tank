@@ -1,6 +1,7 @@
 {
   "id": "kling-o1-3d-render",
   "name": "KLING O1 - 3D to Render",
+  "platform": "weavy",  
   "category": "Video",
   "icon": "\ud83c\udfac",
   "description": "Transform 3D viewport renders into cinematic video using KLING O1 with style reference",
