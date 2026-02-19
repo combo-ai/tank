@@ -1,6 +1,7 @@
 {
   "id": "campagne",
   "name": "Campaign",
+  "platform": "weavy",
   "category": "Advertising",
   "icon": "📢",
   "description": "Full advertising agency workflow: Strategic Planner → Creative Director → Art Director → Copywriter",
