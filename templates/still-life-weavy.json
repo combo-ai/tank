@@ -1,6 +1,7 @@
 {
   "id": "still-life",
   "name": "Still Life",
+  "platform": "weavy",  
   "category": "Photography",
   "icon": "📸",
   "description": "Product/still life photography workflow with Brief Creator, Art Director, Set Designer, and DOP agents",
